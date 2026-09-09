@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ساعة أفق الذكية</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0b132b;
+            color: #ffffff;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;;
+            line-height: 1.6;
+        }
+        .container {
+            width: 90%;
+            padding: 50px 0;
+            margin: 0 auto;
+            max-width: 1100px;
+        }
+
+        .hero-section img {
+            max-width: 100%;
+            width: 350px;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+        .hero-section {
+            display: flex;
+            gap: 30px;
+            padding: 60px 40px;
+            text-align: center;
+            /* background: linear-gradient(180deg, #1c2541 0%, #0b132b 100%); */
+            border-radius: 15px;
+        }
+        .hero-section h1 {
+            font-size: 31.5px;
+            margin-bottom: 15px;
+        }
+        .desc {
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 19.2px;
+            color: #c5d3e8;
+            margin-bottom: 20px;
+        }
+        .price {
+            font-size: 20.8px;
+            font-weight: bold;
+            color: #00f5d4;
+            margin-bottom: 25px;
+        }
+        .cta-button {
+            display: block;
+            background: #48cae4;
+            color: #0b132b;
+            text-decoration: none;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 17.6px;
+            border: none;
+            cursor: pointer;
+            width: fit-content;
+            margin: 0 auto 25px;
+        }
+
+        .title-section {
+            color: #48cae4;
+            margin-bottom: 25px;
+            font-size: 32px;
+            text-align: center;
+        }
+        .features-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            margin-bottom: 50px;
+        }
+        .features-card {
+            background: #1c2541;
+            border: 1px solid #3a506b;
+            border-radius: 12px;
+            padding: 25px;
+        }
+        .title-card {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            line-height: 35px;
+            text-align: center;
+            font-weight: bold;
+            background-color: #48cae4;
+            color: #0b132b;
+            margin-bottom: 15px;
+        }
+        .features-card h3 {
+            margin-bottom: 15px;
+        }
+        .features-card p {
+            font-size: 15.2px;
+        }
+
+        .testimonials-grid {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+        .testimonials-card {
+            background: #1c2541;
+            border-right: 5px solid #00f5d4;
+            flex: 1;
+            border-radius: 12px;
+            min-width: 280px;
+            padding: 20px;
+        }
+        .testimonials-card p {
+            margin-bottom: 15px;
+        }
+        .testimonials-card span {
+            color: #48cae4;
+            font-weight: bold;
+        }
+        .testimonials-card span span {
+            color: yellow;
+        }
+
+        .form-section {
+            background-color: #1c2541;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 12px;
+        }
+        .form-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .form-section input {
+            background-color: #0b132b;
+            color: #ffffff;
+            border: 1px solid #3a506b;
+            padding: 14px;
+            border-radius: 12px;
+            font-size: 17.6px;
+        }
+        .form-section input[type="submit"] {
+            background-color: #00f5d4;
+            color: #0b132b;
+            font-weight: bold;
+        }
+        .form-title {
+            margin: 0 auto 20px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <section class="navbar">
+            <nav></nav>
+        </section>
+
+        <section class="hero-section">
+                <div class="content">
+                    <h1>عِش المستقبَل على معصمك مع ساعة أفق الذكية</h1>
+                    <p class="desc">تصميم عصري متطور يجمع بين متابعة صحتك الدقيقة وتنظيم يومك بكفاءة عالية، مع بطارية تدوم طويلاً.</p>
+                    
+                    <p class="price">عرض خاص لفترة محدودة: 399 ريال <del style="color: #a0aec0; font-size: 1rem;">599 ريال</del></p>
+                    
+                    <a href="#form-section" class="cta-button">أطلبها الآن واحصل على توصيل مجاني</a>
+                </div>
+
+                <img src="watch.jpg" alt="watch-image">
+        </section>
+
+        <section class="features-section">
+                <h2 class="title-section">المميزات</h2>
+                <div class="features-grid">
+
+                    <div class="features-card">
+                        <span class="title-card">1</span>
+                        <h3>بطارية فائقة القوة</h3>
+                        <p>شحنة واحدة تكفيك لمدة 14 يوماً من الاستخدام المتواصل دون الحاجة للشحن اليومي.</p>
+                    </div>
+
+                    <div class="features-card">
+                        <span class="title-card">2</span>
+                        <h3>متابعة صحية متكاملة</h3>
+                        <p>تتبع دقيق لنبضات القلب، مستويات الأكسجين في الدم، وجودة النوم على مدار 24 ساعة.</p>
+                    </div>
+
+                    <div class="features-card">
+                        <span class="title-card">3</span>
+                        <h3>مقاومة للماء والظروف الصعبة</h3>
+                        <p>تصميم متين ومقاوم للماء حتى عمق 50 متراً، لترافقك في السباحة والتمارين الرياضية.</p>
+                    </div>
+                </div>
+        </section>
+
+        <section class="testimonials-section">
+                <h2 class="title-section">آراء العملاء</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonials-card">
+                        <p>الساعة ممتازة جداً والشحن يقعد معي أسبوعين بالراحة. البطارية أفضل شيء فيها!</p>
+                        <span>محمد العتيبي <span>★★★★★</span></span>
+                    </div>
+
+                    <div class="testimonials-card">
+                        <p>تصميمها فخم وعملية جداً في التمارين الرياضية. أنصح فيها وبشدة.</p>
+                        <span>سارة الشمري  <span>★★★★★</span></span>
+                    </div>
+                </div>
+        </section>
+
+        <section class="form-section" id="form-section">
+                <h2 class="form-title">اطلب ساعتك الآن (الدفع عند الاستلام)</h2>
+                <form action="">
+                    <input type="text" name="name" id="name" placeholder="الاسم الكامل: أدخل اسمك الكامل" required>
+                    <input type="tel" name="phone" id="phone" dir="rtl" placeholder="رقم الجوال: 05xxxxxxxx" required>
+                    <input type="text" name="address" id="address" placeholder="العنوان/المدينة: أدخل مدينتك والحي" required>
+                    <input type="submit" value="تأكيد الطلب - 399 ريال فقط">
+                </form>
+        </section>
+    </div>
+</body>
+</html>
